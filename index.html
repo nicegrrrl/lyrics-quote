@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/tailwindConfig.js" type="module"></script>
+    <script src="./scripts/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/ca2692ca00.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Practicing Tailwind & FontAwesome!</title>
+  </head>
+  <body class="bg-gray-900">
+    <main class="h-screen flex justify-center items-center">
+      <div
+        class="main__content relative bg-gray-800 w-[25.8125rem] h-[412px] px-[1.5rem] py-[0.75rem] rounded flex flex-col justify-center items-center gap-6"
+      >
+        <div class="card__header relative w-full h-2/5 flex items-center gap-4">
+          <img
+            class="profile__img absolute top-[-60px] left-[-60px] w-40 h-40 rounded-full"
+            src="./assets/img/paramore.jpg"
+            alt=""
+          />
+          <div
+            class="text__content absolute flex flex-col gap-2 leading-[150%]"
+          >
+            <p
+              class="song__name relative left-[130px] text-4xl font-semibold text-gray-50"
+            >
+              You First
+            </p>
+            <p
+              class="song__performer relative left-[100px] text-xs font-normal text-gray-400"
+            >
+              <span>performed by </span>Paramore
+            </p>
+            <p
+              class="song__writer relative left-[80px] text-xs font-normal text-gray-400"
+            >
+              <span>written by </span>Hayley Williams, Taylor York and Zac Farro
+            </p>
+          </div>
+        </div>
+        <div class="card__content relative py-10 w-full flex flex-col gap-6">
+          <i
+            class="left-quote fa-solid fa-quote-left absolute top-0 left-0 h-2/5 opacity-50 text-2xl text-gray-900"
+          ></i>
+          <div
+            class="song__lyrics text-sm font-normal text-gray-300 text-center leading-[150%]"
+          >
+            <p>Turns out I'm livin' in a horror film</p>
+            <p>Where I'm both the killer and the final girl</p>
+            <p>So who, who are you?</p>
+          </div>
+          <i
+            class="right-quote fa-solid fa-quote-right absolute right-0 bottom-[0] opacity-50 text-2xl text-gray-900"
+          ></i>
+        </div>
+        <div class="card__buttons w-full h-1/5 flex justify-between">
+          <div class="buttons__actions flex gap-2">
+            <button
+              class="button__search h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-pink-500 hover:bg-gray-800 rounded"
+            >
+              <a
+                href="https://open.spotify.com/intl-pt/track/2ZMkAWKrNDXrQuF0N9Q9Xj?si=d20fad6a1a2347fd"
+                target="_blank"
+                >Listen</a
+              >
+            </button>
+            <button
+              class="button__report h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-gray-700 hover:bg-gray-800 rounded"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=_Yr_O1N7ky4&ab_channel=Paramore"
+                target="_blank"
+                >Watch</a
+              >
+            </button>
+          </div>
+          <button
+            class="button__like h-[41px] px-3 py-[5px] text-gray-50 bg-gray-700 hover:bg-gray-800 rounded"
+          >
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
