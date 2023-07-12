@@ -1,4 +1,4 @@
-module.exports = {
+tailwind.config = {
   theme: {
     screens: {
       xs: "360px",
@@ -13,7 +13,7 @@ module.exports = {
       "gray-700": "#374151",
       "gray-400": "#9CA3AF",
       "gray-300": "#D1D5DB",
-      "gray-50": "#F91FAFB",
+      "gray-50": "#F9FAFB",
       "indigo-500": "#4F46E5",
       "pink-500": "#FF52A2",
     },
