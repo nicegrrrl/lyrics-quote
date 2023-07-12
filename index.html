@@ -69,22 +69,14 @@
         <div class="card__buttons w-full h-1/5 flex justify-between">
           <div class="buttons__actions flex gap-2">
             <button
-              class="button__search h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-pink-500 hover:bg-gray-800 rounded"
+              class="button__listen h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-pink-500 hover:bg-gray-800 rounded"
             >
-              <a
-                href="https://open.spotify.com/intl-pt/track/2ZMkAWKrNDXrQuF0N9Q9Xj?si=d20fad6a1a2347fd"
-                target="_blank"
-                >Listen</a
-              >
+              Listen
             </button>
             <button
-              class="button__report h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-gray-700 hover:bg-gray-800 rounded"
+              class="button__watch h-[41px] px-5 py-[6px] font-semibold text-gray-50 bg-gray-700 hover:bg-gray-800 rounded"
             >
-              <a
-                href="https://www.youtube.com/watch?v=_Yr_O1N7ky4&ab_channel=Paramore"
-                target="_blank"
-                >Watch</a
-              >
+              Watch
             </button>
           </div>
           <button
@@ -95,5 +87,50 @@
         </div>
       </div>
     </main>
+
+    <dialog
+      class="listen-modal__controller bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
+    >
+      <div class="listen-modal__container relative">
+        <button
+          class="listen-modal__button--close absolute top-[10px] left-[10px] text-3xl text-pink-500"
+        >
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <iframe
+          class="rounded-xl shadow-xl"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/2ZMkAWKrNDXrQuF0N9Q9Xj?utm_source=generator"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </dialog>
+
+    <dialog
+      class="watch-modal__controller bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
+    >
+      <div class="watch-modal__container relative">
+        <button
+          class="watch-modal__button--close absolute top-[10px] left-[10px] text-3xl text-pink-500"
+        >
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <iframe
+          class="rounded-xl shadow-xl"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_Yr_O1N7ky4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </dialog>
   </body>
 </html>
