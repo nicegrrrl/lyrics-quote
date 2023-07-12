@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./scripts/tailwindConfig.js" type="module"></script>
@@ -89,7 +90,7 @@
     </main>
 
     <dialog
-      class="listen-modal__controller bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
+      class="listen-modal__controller transition-all bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
     >
       <div class="listen-modal__container relative">
         <button
@@ -112,11 +113,11 @@
     </dialog>
 
     <dialog
-      class="watch-modal__controller bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
+      class="watch-modal__controller transition-all bg-transparent backdrop:bg-gray-800 backdrop:opacity-80"
     >
       <div class="watch-modal__container relative">
         <button
-          class="watch-modal__button--close absolute top-[10px] left-[10px] text-3xl text-pink-500"
+          class="watch-modal__button--close absolute top-[10px] right-[10px] text-3xl text-pink-500"
         >
           <i class="fa-solid fa-circle-xmark"></i>
         </button>
